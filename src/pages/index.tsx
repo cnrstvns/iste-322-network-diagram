@@ -42,6 +42,7 @@ export default function Index() {
       onEdgesChange={onEdgesChange}
       draggable={false}
       onConnect={onConnect}
+      fitView
     >
       <Controls showInteractive={false} />
       <Background />

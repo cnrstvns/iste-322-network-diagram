@@ -1,22 +1,26 @@
-import { NodeProps, Handle, Position } from 'reactflow';
+import { Handle, Position } from 'reactflow';
 import { Share2 } from 'lucide-react';
 
-export type RouterNode = {
-  label: string;
-  ip: string;
-  mask: string;
-};
-
-export default function Router({ data, id }: NodeProps<RouterNode>) {
+export default function Router() {
   return (
     <div>
-      <div className="space-y-1.5 p-[10px] w-[220px] border border-[#1a192b] bg-white rounded-[3px]">
-        <div className="flex items-center">
-          <Share2 height={18} />
-          <span className="font-medium">— Router {data.label}</span>
+      <div className="space-y-1 p-[10px] w-[220px] border border-[#1a192b] bg-red-400 rounded-[3px]">
+        <div>
+          <div className="flex items-center space-x-1.5">
+            <Share2 height={18} />
+            <span className="font-medium">PFSense</span>
+          </div>
+          <span className="font-light">(barker.piedpiper.com)</span>
         </div>
-        <div>IP: {data.ip}</div>
-        <div>Netmask: {data.mask}</div>
+        <div>
+          <span className="font-medium">WAN IP:</span> RIT DHCP
+        </div>
+        <div>
+          <span className="font-medium">WinNet IP:</span> 192.168.10.0/24
+        </div>
+        <div>
+          <span className="font-medium">LinNet IP:</span> 192.168.20.0/24
+        </div>
       </div>
       <Handle
         type="target"

@@ -9,10 +9,11 @@ export default function Internet({ data }: NodeProps<InternetNode>) {
   return (
     <div>
       <div className="space-y-1.5 p-[10px] w-[220px] border border-[#1a192b] bg-orange-400 rounded-[3px]">
-        <div className="flex items-center">
+        <div className="flex items-center space-x-1.5">
           <CloudCog height={18} />
-          <span className="font-medium">— {data.label}</span>
+          <span className="font-medium">{data.label}</span>
         </div>
+        <span className="font-light">(rit.edu)</span>
       </div>
       <Handle
         type="source"

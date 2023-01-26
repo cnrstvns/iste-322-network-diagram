@@ -1,22 +1,42 @@
 import { NodeProps, Handle, Position } from 'reactflow';
 import { Laptop } from 'lucide-react';
+import clsx from 'clsx';
 
 export type HostNode = {
   label: string;
   ip: string;
-  mask: string;
+  hostname: string;
+  type: 'server' | 'client';
+  mac: string;
 };
 
-export default function Host({ data, id }: NodeProps<HostNode>) {
+export default function Host({ data }: NodeProps<HostNode>) {
+  const { type, label, ip, hostname, mac } = data;
+
   return (
     <div>
-      <div className="space-y-1.5 p-[10px] w-[220px] border border-[#1a192b] bg-white rounded-[3px]">
-        <div className="flex items-center">
-          <Laptop height={18} />
-          <span className="font-medium">— Host {data.label}</span>
+      <div
+        className={clsx(
+          'space-y-0 p-[10px] w-[220px] border border-[#1a192b] bg-white rounded-[3px]',
+          {
+            'bg-violet-400': type === 'server',
+            'bg-indigo-400': type === 'client',
+          },
+        )}
+      >
+        <div className="pb-2">
+          <div className="flex items-center space-x-1.5">
+            <Laptop height={18} />
+            <span className="font-medium">{label}</span>
+          </div>
+          <span className="font-light">({hostname})</span>
         </div>
-        <div>IP: {data.ip}</div>
-        <div>Netmask: {data.mask}</div>
+        <div>
+          <span className="font-medium">IP:</span> {ip}
+        </div>
+        <div>
+          <span className="font-medium">MAC:</span> {mac}
+        </div>
       </div>
       <Handle
         type="target"
@@ -24,13 +44,6 @@ export default function Host({ data, id }: NodeProps<HostNode>) {
         isConnectable={false}
         draggable={false}
         className="absolute -top-0.5 pointer-events-none w-[6px] h-[6px] bg-[#1a192b] border-white border rounded-full"
-      />
-      <Handle
-        type="source"
-        position={Position.Bottom}
-        isConnectable={false}
-        draggable={false}
-        className="absolute -bottom-0.5 pointer-events-none w-[6px] h-[6px] bg-[#1a192b] border-white border rounded-full"
       />
     </div>
   );

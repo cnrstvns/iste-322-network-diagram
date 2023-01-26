@@ -1,5 +1,5 @@
 import { NodeProps, Handle, Position } from 'reactflow';
-import { Laptop } from 'lucide-react';
+import { Laptop, Server } from 'lucide-react';
 import clsx from 'clsx';
 
 export type HostNode = {
@@ -26,7 +26,8 @@ export default function Host({ data }: NodeProps<HostNode>) {
       >
         <div className="pb-2">
           <div className="flex items-center space-x-1.5">
-            <Laptop height={18} />
+            {type === 'client' && <Laptop height={18} />}
+            {type === 'server' && <Server height={18} />}
             <span className="font-medium">{label}</span>
           </div>
           <span className="font-light">({hostname})</span>

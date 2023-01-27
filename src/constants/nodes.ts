@@ -77,7 +77,7 @@ const initialNodes: Node<InternetNode | HostNode>[] = [
   },
   {
     id: '8',
-    position: { x: 400, y: 460 },
+    position: { x: 400, y: 480 },
     data: {
       label: 'CentOS 7 Client',
       type: 'client',

@@ -42,6 +42,11 @@ export default function Host({ data }: NodeProps<HostNode>) {
           <span className="font-medium">DNS:</span>{' '}
           {ip === '192.168.10.5' ? '127.0.0.1' : '192.168.10.5'}
         </div>
+        <div>
+          <span className="font-medium">DG:</span>{' '}
+          {hostname.includes('theranos') && '192.168.10.1'}
+          {hostname.includes('piedpiper') && '192.168.20.1'}
+        </div>
       </div>
       <Handle
         type="target"

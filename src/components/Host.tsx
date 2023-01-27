@@ -40,7 +40,7 @@ export default function Host({ data }: NodeProps<HostNode>) {
         </div>
         <div>
           <span className="font-medium">DNS:</span>{' '}
-          {type === 'server' ? '127.0.0.1' : '192.168.10.5'}
+          {ip === '192.168.10.5' ? '127.0.0.1' : '192.168.10.5'}
         </div>
       </div>
       <Handle

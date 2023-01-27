@@ -5,13 +5,13 @@ import { HostNode } from '@/components/Host';
 const initialNodes: Node<InternetNode | HostNode>[] = [
   {
     id: '1',
-    position: { x: 0, y: 0 },
+    position: { x: 0, y: -50 },
     data: { label: 'Internet (RIT)' },
     type: 'internet',
   },
   {
     id: '2',
-    position: { x: 0, y: 100 },
+    position: { x: 0, y: 50 },
     data: { label: '', ip: '1.1.1.1', mask: '255.255.255.0' },
     type: 'router',
   },

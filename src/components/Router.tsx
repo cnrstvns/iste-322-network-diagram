@@ -21,6 +21,9 @@ export default function Router() {
         <div>
           <span className="font-medium">LinNet IP:</span> 192.168.20.0/24
         </div>
+        <div>
+          <span className="font-medium">DNS:</span> 192.168.10.5 / 1.1.1.1
+        </div>
       </div>
       <Handle
         type="target"

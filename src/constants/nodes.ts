@@ -43,7 +43,7 @@ const initialNodes: Node<InternetNode | HostNode>[] = [
     id: '5',
     position: { x: 150, y: 300 },
     data: {
-      label: 'RHEL 8 Server',
+      label: 'CentOS 7 Server',
       type: 'server',
       hostname: 'richard.piedpiper.com',
       ip: '192.168.20.5',
@@ -77,7 +77,31 @@ const initialNodes: Node<InternetNode | HostNode>[] = [
   },
   {
     id: '8',
+    position: { x: 150, y: 500 },
+    data: {
+      label: 'CentOS 7 Server',
+      type: 'server',
+      hostname: 'bighead.piedpiper.com',
+      ip: '192.168.20.6',
+      mac: '00:50:56:b0:53:a6',
+    },
+    type: 'host',
+  },
+  {
+    id: '9',
     position: { x: 400, y: 500 },
+    data: {
+      label: 'CentOS 7 Server',
+      type: 'server',
+      hostname: 'monica.piedpiper.com',
+      ip: '192.168.20.7',
+      mac: '00:50:56:b0:e3:25',
+    },
+    type: 'host',
+  },
+  {
+    id: '10',
+    position: { x: 400, y: 700 },
     data: {
       label: 'CentOS 7 Client',
       type: 'client',

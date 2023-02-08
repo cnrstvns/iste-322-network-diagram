@@ -8,6 +8,8 @@ const initialEdges: Edge[] = [
   { id: 'e2-6', source: '2', target: '6', animated: true },
   { id: 'e2-7', source: '2', target: '7', animated: true },
   { id: 'e2-8', source: '2', target: '8', animated: true },
+  { id: 'e2-9', source: '2', target: '9', animated: true },
+  { id: 'e2-10', source: '2', target: '10', animated: true },
 ];
 
 export default initialEdges;

@@ -17,7 +17,7 @@ export default function Host({ data }: NodeProps<HostNode>) {
     <div>
       <div
         className={clsx(
-          'space-y-0 p-[10px] w-[220px] border border-[#1a192b] bg-white rounded-[3px]',
+          'space-y-0 p-[10px] w-[220px] border border-[#1a192b] rounded-[3px]',
           {
             'bg-violet-400': type === 'server',
             'bg-indigo-400': type === 'client',

@@ -95,7 +95,7 @@ const initialNodes: Node<InternetNode | HostNode>[] = [
       type: 'server',
       hostname: 'jianyang.piedpiper.com',
       ip: '192.168.20.9',
-      mac: '00:50:56:b0:81:02	',
+      mac: '00:50:56:b0:81:02',
     },
     type: 'host',
   },

@@ -45,7 +45,7 @@ export default function Host({ data }: NodeProps<HostNode>) {
         <div>
           <span className="font-medium">DG:</span>{' '}
           {hostname.includes('theranos') && '192.168.10.1'}
-          {hostname.includes('piedpiper') && '192.168.20.1'}
+          {hostname.includes('hoolihq') && '192.168.20.1'}
         </div>
       </div>
       <Handle

@@ -10,7 +10,7 @@ export default function Router() {
             <Share2 height={18} />
             <span className="font-medium">PFSense</span>
           </div>
-          <span className="font-light">(barker.piedpiper.com)</span>
+          <span className="font-light">(barker.hoolihq.com)</span>
         </div>
         <div>
           <span className="font-medium">WAN IP:</span> RIT DHCP

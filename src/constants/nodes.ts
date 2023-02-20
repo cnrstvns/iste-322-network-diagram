@@ -45,7 +45,7 @@ const initialNodes: Node<InternetNode | HostNode>[] = [
     data: {
       label: 'CentOS 7 Server',
       type: 'server',
-      hostname: 'richard.piedpiper.com',
+      hostname: 'richard.hoolihq.com',
       ip: '192.168.20.5',
       mac: '00:50:56:b0:8b:23',
     },
@@ -57,7 +57,7 @@ const initialNodes: Node<InternetNode | HostNode>[] = [
     data: {
       label: 'CentOS 7 Client',
       type: 'client',
-      hostname: 'dinesh.piedpiper.com',
+      hostname: 'dinesh.hoolihq.com',
       ip: 'DHCP',
       mac: '00:50:56:b0:6c:e4',
     },
@@ -69,7 +69,7 @@ const initialNodes: Node<InternetNode | HostNode>[] = [
     data: {
       label: 'Rocky Linux Server',
       type: 'server',
-      hostname: 'gilfoyle.piedpiper.com',
+      hostname: 'gilfoyle.hoolihq.com',
       ip: 'DHCP',
       mac: '00:50:56:b0:07:b7',
     },
@@ -81,7 +81,7 @@ const initialNodes: Node<InternetNode | HostNode>[] = [
     data: {
       label: 'CentOS 7 Server',
       type: 'server',
-      hostname: 'bighead.piedpiper.com',
+      hostname: 'bighead.hoolihq.com',
       ip: '192.168.20.6',
       mac: '00:50:56:b0:53:a6',
     },
@@ -93,7 +93,7 @@ const initialNodes: Node<InternetNode | HostNode>[] = [
     data: {
       label: 'CentOS 8 Server',
       type: 'server',
-      hostname: 'jianyang.piedpiper.com',
+      hostname: 'jianyang.hoolihq.com',
       ip: '192.168.20.9',
       mac: '00:50:56:b0:81:02',
     },
@@ -105,7 +105,7 @@ const initialNodes: Node<InternetNode | HostNode>[] = [
     data: {
       label: 'CentOS 7 Client',
       type: 'client',
-      hostname: 'dinesh.piedpiper.com',
+      hostname: 'dinesh.hoolihq.com',
       ip: 'DHCP',
       mac: '00:50:56:b0:6c:e4',
     },
